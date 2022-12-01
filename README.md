@@ -15,6 +15,12 @@
 ## Instrucciones Laravel
 
 Clonar repositorio git clone https://github.com/Cartes5/Laravel9Crud.git
+
+Crear en phpmyadmin Base de datos.
+Nombre base de datos: laravel 9
+Usuario: el suyo (predeterminado xampp root)
+Contraseña: vacio
+
 Abrir terminal
     -php artisan serve
 http://127.0.0.1:8000/companies
