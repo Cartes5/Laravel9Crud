@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Edit Company Form - Laravel 9 CRUD Tutorial</title>
+    <title>Editar Compañia - Laravel 9 CRUD Tutorial</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
@@ -12,11 +12,11 @@
         <div class="row">
             <div class="col-lg-12 margin-tb">
                 <div class="pull-left">
-                    <h2>Edit Company</h2>
+                    <h2>Editar Compañia</h2>
                 </div>
                 <div class="pull-right">
                     <a class="btn btn-primary" href="{{ route('companies.index') }}" enctype="multipart/form-data">
-                        Back</a>
+                        Volver</a>
                 </div>
             </div>
         </div>
@@ -31,7 +31,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
-                        <strong>Company Name:</strong>
+                        <strong>Nombre Compañia:</strong>
                         <input type="text" name="name" value="{{ $company->name }}" class="form-control"
                             placeholder="Company name">
                         @error('name')
@@ -41,7 +41,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
-                        <strong>Company Email:</strong>
+                        <strong>Email Compañia:</strong>
                         <input type="email" name="email" class="form-control" placeholder="Company Email"
                             value="{{ $company->email }}">
                         @error('email')
@@ -51,7 +51,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
-                        <strong>Company Address:</strong>
+                        <strong>Direccion Compañia:</strong>
                         <input type="text" name="address" value="{{ $company->address }}" class="form-control"
                             placeholder="Company Address">
                         @error('address')
@@ -59,7 +59,7 @@
                         @enderror
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary ml-3">Submit</button>
+                <button type="submit" class="btn btn-primary ml-3">Guardar</button>
             </div>
         </form>
     </div>
